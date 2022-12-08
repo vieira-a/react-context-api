@@ -1,12 +1,18 @@
+/**
+ * This component will only shows context data on CardContext.jsx
+ */
+
+//Context imports
 import { useContext } from "react";
 import { CardContext } from "../context/CardContext";
 
 export default function PersonalCard() {
-
-  const { personalCard, setPersonalCard  } = useContext(CardContext);
+  //Only shows, don't edit
+  const { personalCard } = useContext(CardContext);
   
   return (    
     <div className="card-container">
+      <h1>#Componente PersonalCard</h1>
       <div className="header">
         <h1>{personalCard.name}</h1>
         <h2>{personalCard.occupation}</h2>

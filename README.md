@@ -50,3 +50,18 @@ import { CounterContext } from "./context/CounterContext";
 ```
 - Seleção de dados (neste caso desestruturando a varável counter que se encontra no CounterContext)
 `const { counter } = useContext(CounterContext);`
+
+**5 - Alterando o context**
+
+Para alterar os dados do context, é necessário realizar as devidas importações. Os valores são alerados geralmente utilizando hooks para gerenciamento de estados como useState.
+O fato de o context poder ser compartilhado entre vários componentes faz com que as alterações sejam exibidas em todos os componentes em que o context estiver importado. Por este motivo, é interessante separar arquivos de contexto de acordo com as suas responsabilidades.
+
+## Aplicação
+Utilizei este projeto de exemplo para aplicar os conceitos de Context API aprendidos:
+A ideia é aplicar os conxeitos ao projeto (PersonalCard)[https://github.com/vieira-a/personal-card], aonde preciso lidar com dados passados entre componentes.
+
+Funcionamento deste projeto:
+- O App.jsx, componente principal, exibe o componente PersonalCard.jsx, com dados pré-estabelecidos contidos no arquivo CardContext.jsx;
+- O PersonalCard.jsx apenas exibe os dados do CardContext.jsx;
+- O componente CardCreate.jsx contém o formulário responsável por alterar os dados do CardContext.jsx; 
+- Ao acionar a função para criar um novo cartão, o CardCreate será exibido; o usuário poderá preencher as informações do formulário e em seguida dar o comando para Gerar o seu cartão pessoal. Com isso, o componente PersonalCard será exibido novamente, porém com as informações atualizadas.
