@@ -19,15 +19,8 @@ export default function CardCreate() {
     })
   }
   
-  //Create card
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(personalCard)
-  }
-  
   return(
     <div>
-      <h1>#Componente CardCreate</h1>
       <form action="submit">
         <label htmlFor="name">Nome
         <input type="text" name="name" placeholder="Digite o seu nome" onChange={handleChange} />
@@ -36,7 +29,6 @@ export default function CardCreate() {
         <input type="text" name="occupation" placeholder="Digite a sua profissão" onChange={handleChange} />
         </label>
       </form>
-      <button onClick={handleSubmit}>Gerar cartão</button>
     </div>
   )
 }

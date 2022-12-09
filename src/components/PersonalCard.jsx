@@ -12,7 +12,6 @@ export default function PersonalCard() {
   
   return (    
     <div className="card-container">
-      <h1>#Componente PersonalCard</h1>
       <div className="header">
         <h1>{personalCard.name}</h1>
         <h2>{personalCard.occupation}</h2>

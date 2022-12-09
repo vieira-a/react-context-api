@@ -65,3 +65,5 @@ Funcionamento deste projeto:
 - O PersonalCard.jsx apenas exibe os dados do CardContext.jsx;
 - O componente CardCreate.jsx contém o formulário responsável por alterar os dados do CardContext.jsx; 
 - Ao acionar a função para criar um novo cartão, o CardCreate será exibido; o usuário poderá preencher as informações do formulário e em seguida dar o comando para Gerar o seu cartão pessoal. Com isso, o componente PersonalCard será exibido novamente, porém com as informações atualizadas.
+
+Criei o custom hook useCard.jsx para gerenciar a passagem entre os componentes
